@@ -1,0 +1,8 @@
+.auth-container{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.24);
+    height: 100vh;
+    align-items: center;
+    width: 100%;
+}

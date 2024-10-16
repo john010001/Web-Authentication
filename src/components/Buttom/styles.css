@@ -1,0 +1,50 @@
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(92, 184, 92, 1);
+    color: white;
+    border: rgba(92, 184, 92, 1);
+    padding: 10px 30px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.btn-container:disabled {
+    background-color: rgba(92, 184, 92, 0.5);
+    color: white;
+    border: rgba(92, 184, 92, 0.5);
+}
+
+.btn-container:hover {
+    background-color: rgba(92, 184, 92, 0.8);
+    color: white;
+    border: rgba(92, 184, 92, 0.8);
+    cursor: pointer;
+}
+
+/* loader */
+
+.btn-container .loader {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: rgba(255, 255, 255, 0.8);
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* si esta en loader desabilitar */
+
+.btn-container:disabled .loader {
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top-color: rgba(255, 255, 255, 0.3);
+    animation: none;
+}
